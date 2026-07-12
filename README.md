@@ -15,7 +15,7 @@
 
 ## 🚀 ¿Qué es WowosPlay?
 
-**WowosPlay** nació con la idea de darle a los niños (¡como Wowo y Ely!) un espacio seguro en internet. En lugar de dejarlos navegar por YouTube con algoritmos impredecibles, WowosPlay permite a los padres **curar exactamente qué videos ven sus hijos**, mezclando entretenimiento con educación interactiva.
+**WowosPlay** nació con la idea de darle a los niños un espacio seguro en internet. En lugar de dejarlos navegar por YouTube con algoritmos impredecibles, WowosPlay permite a los padres **curar exactamente qué videos ven sus hijos**, mezclando entretenimiento con educación interactiva.
 
 > 💡 **La Magia Técnica:** Todo este increíble proyecto funciona dentro de **un único archivo HTML**. ¡Sin servidores, sin instalaciones complicadas, sin consolas de comandos! Solo haz doble clic y la diversión comienza.
 
