@@ -84,17 +84,33 @@
         // BASE DE DATOS SIMULADA
         // ==========================================
         const INITIAL_PROFILES = [
-            { id: '1', name: 'Wowo', avatar: '👧', color: 'bg-emerald-400', stars: 12, approvedVideos: [1, 2, 3, 4, 5, 6], favorites: [2, 4], history: [2, 1] },
-            { id: '2', name: 'Ely', avatar: '👧', color: 'bg-purple-400', stars: 8, approvedVideos: [1, 2, 4, 6], favorites: [2], history: [] }
+            { id: '1', name: 'Wowo', avatar: '👧', color: 'bg-emerald-400', stars: 12, approvedVideos: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], favorites: [2, 4, 10], history: [2, 1] },
+            { id: '2', name: 'Ely', avatar: '👧', color: 'bg-purple-400', stars: 8, approvedVideos: [1, 2, 4, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], favorites: [2, 7], history: [] }
         ];
 
         const INITIAL_VIDEOS = [
-            { id: 1, title: 'Arte y Manualidades con Blue', category: 'Educativo', isNew: true, thumbnail: 'https://img.youtube.com/vi/6fZ475WmrUo/hqdefault.jpg', url: 'https://www.youtube.com/watch?v=6fZ475WmrUo', certifiedPediatric: false, certifiedParenting: true },
-            { id: 2, title: 'Listos a jugar: Bañarse', category: 'Educativo', isNew: true, thumbnail: 'https://img.youtube.com/vi/MOL2qE3EqC4/hqdefault.jpg', url: 'https://www.youtube.com/watch?v=MOL2qE3EqC4', certifiedPediatric: true, certifiedParenting: true },
-            { id: 3, title: 'Pingu - Chef', category: 'Animación', isNew: false, thumbnail: 'https://img.youtube.com/vi/Sct5j7Quo54/hqdefault.jpg', url: 'https://www.youtube.com/watch?v=Sct5j7Quo54', certifiedPediatric: false, certifiedParenting: false },
-            { id: 4, title: 'Super Simple Español (Canal)', category: 'Música', isNew: false, thumbnail: 'https://img.youtube.com/vi/qA-OQ-VwG-o/hqdefault.jpg', url: 'https://www.youtube.com/@SuperSimpleEspanol', certifiedPediatric: true, certifiedParenting: true },
-            { id: 5, title: 'Aventuras Infantiles', category: 'Animación', isNew: false, thumbnail: 'https://img.youtube.com/vi/oSHeAmWCVWY/hqdefault.jpg', url: 'https://www.youtube.com/watch?v=oSHeAmWCVWY', certifiedPediatric: false, certifiedParenting: true },
-            { id: 6, title: 'Canciones y Diversión', category: 'Música', isNew: true, thumbnail: 'https://img.youtube.com/vi/6sLHsFToPCQ/hqdefault.jpg', url: 'https://www.youtube.com/watch?v=6sLHsFToPCQ', certifiedPediatric: true, certifiedParenting: true },
+            { id: 1, title: 'Arte y Manualidades con Blue', category: 'Educativo', isNew: false, thumbnail: 'https://i.ytimg.com/vi/6fZ475WmrUo/hqdefault.jpg', url: 'https://www.youtube.com/watch?v=6fZ475WmrUo', certifiedPediatric: false, certifiedParenting: true },
+            { id: 2, title: 'Listos a jugar: Bañarse', category: 'Educativo', isNew: false, thumbnail: 'https://i.ytimg.com/vi/MOL2qE3EqC4/hqdefault.jpg', url: 'https://www.youtube.com/watch?v=MOL2qE3EqC4', certifiedPediatric: true, certifiedParenting: true },
+            { id: 3, title: 'Pingu - Chef', category: 'Animación', isNew: false, thumbnail: 'https://i.ytimg.com/vi/Sct5j7Quo54/hqdefault.jpg', url: 'https://www.youtube.com/watch?v=Sct5j7Quo54', certifiedPediatric: false, certifiedParenting: false },
+            { id: 4, title: 'Super Simple Español (Canal)', category: 'Música', isNew: false, thumbnail: 'https://i.ytimg.com/vi/qA-OQ-VwG-o/hqdefault.jpg', url: 'https://www.youtube.com/@SuperSimpleEspanol', certifiedPediatric: true, certifiedParenting: true },
+            { id: 5, title: 'Aventuras Infantiles', category: 'Animación', isNew: false, thumbnail: 'https://i.ytimg.com/vi/oSHeAmWCVWY/hqdefault.jpg', url: 'https://www.youtube.com/watch?v=oSHeAmWCVWY', certifiedPediatric: false, certifiedParenting: true },
+            { id: 6, title: 'Canciones y Diversión', category: 'Música', isNew: false, thumbnail: 'https://i.ytimg.com/vi/6sLHsFToPCQ/hqdefault.jpg', url: 'https://www.youtube.com/watch?v=6sLHsFToPCQ', certifiedPediatric: true, certifiedParenting: true },
+            { id: 7, title: 'Las Ruedas del Autobús', category: 'Música', isNew: true, thumbnail: 'https://i.ytimg.com/vi/Q74V0xJntL4/hqdefault.jpg', url: 'https://www.youtube.com/watch?v=Q74V0xJntL4', certifiedPediatric: true, certifiedParenting: true },
+            { id: 8, title: 'El Abecedario con Blue', category: 'Educativo', isNew: true, thumbnail: 'https://i.ytimg.com/vi/q61_8Dq2UuQ/hqdefault.jpg', url: 'https://www.youtube.com/watch?v=q61_8Dq2UuQ', certifiedPediatric: true, certifiedParenting: true },
+            { id: 9, title: 'El mundo de Elmo', category: 'Educativo', isNew: true, thumbnail: 'https://i.ytimg.com/vi/FqG_Hw4tL9Y/hqdefault.jpg', url: 'https://www.youtube.com/watch?v=FqG_Hw4tL9Y', certifiedPediatric: true, certifiedParenting: true },
+            { id: 10, title: 'Bebé Tiburón (Baby Shark)', category: 'Música', isNew: true, thumbnail: 'https://i.ytimg.com/vi/7sK_b_qL0mE/hqdefault.jpg', url: 'https://www.youtube.com/watch?v=7sK_b_qL0mE', certifiedPediatric: false, certifiedParenting: true },
+            { id: 11, title: 'Pingu va a pescar', category: 'Animación', isNew: true, thumbnail: 'https://i.ytimg.com/vi/48yN4tN-2D4/hqdefault.jpg', url: 'https://www.youtube.com/watch?v=48yN4tN-2D4', certifiedPediatric: false, certifiedParenting: false },
+            { id: 12, title: 'Cinco Monitos saltando', category: 'Música', isNew: true, thumbnail: 'https://i.ytimg.com/vi/M91W784Z2R0/hqdefault.jpg', url: 'https://www.youtube.com/watch?v=M91W784Z2R0', certifiedPediatric: true, certifiedParenting: true },
+            { id: 13, title: 'El Monstruo de la Laguna', category: 'Música', isNew: true, thumbnail: 'https://i.ytimg.com/vi/dTEK52R21Qw/hqdefault.jpg', url: 'https://www.youtube.com/watch?v=dTEK52R21Qw', certifiedPediatric: false, certifiedParenting: true },
+            { id: 14, title: 'Canticuénticos 100 Minutos', category: 'Música', isNew: true, thumbnail: 'https://i.ytimg.com/vi/ZxHC4i0rp84/hqdefault.jpg', url: 'https://www.youtube.com/watch?v=ZxHC4i0rp84', certifiedPediatric: false, certifiedParenting: true },
+            { id: 15, title: 'Pequeñas historias de Bluey', category: 'Educativo', isNew: true, thumbnail: 'https://i.ytimg.com/vi/r1Ajr4moeDI/hqdefault.jpg', url: 'https://www.youtube.com/watch?v=r1Ajr4moeDI', certifiedPediatric: true, certifiedParenting: true },
+            { id: 16, title: 'Daniel Tigre - Felices Pascuas', category: 'Animación', isNew: true, thumbnail: 'https://i.ytimg.com/vi/Ki1UfALLmks/hqdefault.jpg', url: 'https://www.youtube.com/watch?v=Ki1UfALLmks', certifiedPediatric: false, certifiedParenting: true },
+            { id: 17, title: 'Bluey y Bingo en la Tele', category: 'Animación', isNew: true, thumbnail: 'https://i.ytimg.com/vi/Qy8XdJup4I8/hqdefault.jpg', url: 'https://www.youtube.com/watch?v=Qy8XdJup4I8', certifiedPediatric: false, certifiedParenting: true },
+            { id: 18, title: 'Canciones de Once Niñas y Niños', category: 'Música', isNew: true, thumbnail: 'https://i.ytimg.com/vi/Hh8ngXMu0dE/hqdefault.jpg', url: 'https://www.youtube.com/watch?v=Hh8ngXMu0dE', certifiedPediatric: false, certifiedParenting: true },
+            { id: 19, title: 'Jorge El Curioso - El Agua', category: 'Educativo', isNew: true, thumbnail: 'https://i.ytimg.com/vi/UVmc_D_ev3E/hqdefault.jpg', url: 'https://www.youtube.com/watch?v=UVmc_D_ev3E', certifiedPediatric: false, certifiedParenting: true },
+            { id: 20, title: 'Las Pistas de Blue - Mejores Momentos', category: 'Educativo', isNew: true, thumbnail: 'https://i.ytimg.com/vi/AG0zQFcgW8Y/hqdefault.jpg', url: 'https://www.youtube.com/watch?v=AG0zQFcgW8Y', certifiedPediatric: false, certifiedParenting: true },
+            { id: 21, title: 'Acá Tá - Canticuénticos', category: 'Música', isNew: true, thumbnail: 'https://i.ytimg.com/vi/GgYVzNBT9VU/hqdefault.jpg', url: 'https://www.youtube.com/watch?v=GgYVzNBT9VU', certifiedPediatric: false, certifiedParenting: true },
+            { id: 22, title: 'Firulé - Canticuénticos', category: 'Música', isNew: true, thumbnail: 'https://i.ytimg.com/vi/-kmTO9s9LXA/hqdefault.jpg', url: 'https://www.youtube.com/watch?v=-kmTO9s9LXA', certifiedPediatric: false, certifiedParenting: true },
         ];
 
         const CATEGORIES = [
@@ -104,18 +120,383 @@
             { name: 'Educativo', icon: BookOpen }
         ];
 
+        // ==========================================
+        // COMPONENTES EXTRAÍDOS (Mejores prácticas y Reglas de Hooks)
+        // ==========================================
+        const Toast = ({ message }) => {
+            if (!message) return null;
+            return (
+                <div className="fixed top-6 left-1/2 transform -translate-x-1/2 bg-indigo-600 text-white px-8 py-4 rounded-[2rem] shadow-2xl z-[100] font-black text-lg animate-bounce transition-all border-4 border-white text-center w-max max-w-[90vw]">
+                    {message}
+                </div>
+            );
+        };
+
+        const VideoPlayerModal = ({ playingVideo, setPlayingVideo }) => {
+            if (!playingVideo) return null;
+            
+            const getEmbedUrl = (url) => {
+                if (!url) return null;
+                try {
+                    let videoId = null;
+                    if (url.includes('youtu.be/')) {
+                        videoId = url.split('youtu.be/')[1]?.split(/[?#]/)[0];
+                    } else if (url.includes('youtube.com/watch')) {
+                        const urlParams = new URLSearchParams(url.split('?')[1]);
+                        videoId = urlParams.get('v');
+                    } else if (url.includes('youtube.com/shorts/')) {
+                        videoId = url.split('shorts/')[1]?.split(/[?#]/)[0];
+                    } else if (url.includes('youtube.com/embed/')) {
+                        videoId = url.split('embed/')[1]?.split(/[?#]/)[0];
+                    } else if (url.includes('@SuperSimpleEspanol')) {
+                        videoId = 'qA-OQ-VwG-o';
+                    }
+
+                    if (videoId) {
+                        return `https://www.youtube.com/embed/${videoId}`;
+                    }
+                } catch (e) {
+                    console.error("Error al procesar la URL del video:", e);
+                }
+                return null;
+            };
+
+            const embedUrl = getEmbedUrl(playingVideo.url);
+
+            return (
+                <div className="fixed inset-0 bg-slate-900 z-[100] flex flex-col">
+                    <div className="flex justify-between items-center p-4 bg-slate-800 text-white shadow-md z-10">
+                        <h3 className="font-bold truncate text-xl">{playingVideo.title}</h3>
+                        <button onClick={() => setPlayingVideo(null)} className="p-3 bg-slate-700 hover:bg-red-500 rounded-full transition active:scale-95">
+                            <X className="w-6 h-6" />
+                        </button>
+                    </div>
+                    <div className="flex-1 bg-black relative flex items-center justify-center p-0 md:p-6">
+                        {embedUrl ? (
+                            <iframe 
+                                className="w-full h-full max-w-5xl max-h-[80vh] md:rounded-2xl shadow-2xl bg-slate-900"
+                                src={`${embedUrl}?autoplay=1`}
+                                title={playingVideo.title}
+                                frameBorder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowFullScreen>
+                            </iframe>
+                        ) : (
+                            <>
+                                <img 
+                                    src={playingVideo.thumbnail} 
+                                    alt={playingVideo.title} 
+                                    className="w-full h-full object-cover opacity-30 blur-sm absolute inset-0"
+                                    onError={(e) => { e.target.onerror = null; e.target.src = 'https://placehold.co/800x600/1e293b/ffffff?text=Video+No+Disponible'; }}
+                                />
+                                <div className="relative z-10 flex flex-col items-center">
+                                    <Play className="w-24 h-24 text-white opacity-90 mb-4 animate-pulse drop-shadow-[0_0_15px_rgba(255,255,255,0.5)]" fill="currentColor" />
+                                    <p className="text-white text-2xl font-black text-center px-4">Reproduciendo...<br/><span className="text-sm font-normal opacity-70">(Simulación sin URL)</span></p>
+                                </div>
+                            </>
+                        )}
+                    </div>
+                </div>
+            );
+        };
+
+        const NavButton = ({ icon: IconComponent, label, isActive, onClick }) => (
+            <button onClick={onClick} className={`flex flex-col items-center justify-center w-20 transition-transform ${isActive ? '-translate-y-2' : 'opacity-70 hover:opacity-100'}`}>
+                <div className={`p-3 rounded-[1.5rem] mb-1 transition-colors ${isActive ? 'bg-indigo-500 text-white shadow-lg' : 'text-slate-400 bg-slate-100'}`}>
+                    <IconComponent className="w-7 h-7" fill={isActive ? "currentColor" : "none"} />
+                </div>
+                <span className={`text-[11px] font-black uppercase ${isActive ? 'text-indigo-600' : 'text-slate-400'}`}>{label}</span>
+            </button>
+        );
+
+        const LetrasGame = ({ onExit, addStars }) => {
+            const letras = ['A', 'E', 'I', 'O', 'U'];
+            const [target, setTarget] = useState('');
+            const [opciones, setOpciones] = useState([]);
+            const [mensaje, setMensaje] = useState('');
+            const [animando, setAnimando] = useState(false);
+
+            const generarNivel = () => {
+                const seleccionada = letras[Math.floor(Math.random() * letras.length)];
+                setTarget(seleccionada);
+                let mezclar = [...letras].sort(() => 0.5 - Math.random()).slice(0, 3);
+                if (!mezclar.includes(seleccionada)) mezclar[0] = seleccionada;
+                setOpciones(mezclar.sort(() => 0.5 - Math.random()));
+                setMensaje('');
+                setAnimando(false);
+            };
+
+            useEffect(() => { generarNivel(); }, []);
+
+            const handleSelect = (letra) => {
+                if (animando) return;
+                if (letra === target) {
+                    setMensaje('¡CORRECTO! +1 🌟');
+                    addStars(1);
+                    setAnimando(true);
+                    setTimeout(generarNivel, 1500);
+                } else {
+                    setMensaje('¡Intenta de nuevo!');
+                    setAnimando(true);
+                    setTimeout(() => { setMensaje(''); setAnimando(false); }, 1000);
+                }
+            };
+
+            return (
+                <div className="h-screen lg:h-[calc(100vh-4rem)] bg-blue-500 p-6 w-full lg:max-w-5xl mx-auto relative flex flex-col items-center justify-center lg:rounded-[3rem] lg:my-8 shadow-2xl">
+                    <button onClick={onExit} className="absolute top-8 left-6 p-3 bg-white/20 hover:bg-white/40 transition rounded-full text-white font-bold backdrop-blur-sm z-10"><X className="w-8 h-8"/></button>
+                    <h2 className="text-white text-3xl font-black text-center mb-8 drop-shadow-md">Encuentra la vocal:</h2>
+                    <div className="text-[8rem] font-black text-yellow-300 drop-shadow-xl mb-12 animate-bounce bg-white/20 w-48 h-48 rounded-full flex items-center justify-center">
+                        {target}
+                    </div>
+                    <div className="h-12 mb-4 text-2xl font-black text-white">{mensaje}</div>
+                    <div className="flex gap-4">
+                        {opciones.map((l, i) => (
+                            <button key={i} onClick={() => handleSelect(l)} className="w-24 h-24 bg-white rounded-[2rem] text-5xl font-black text-blue-600 shadow-[0_6px_0_0_rgba(0,0,0,0.2)] active:translate-y-2 active:shadow-none transition transform hover:scale-105">
+                                {l}
+                            </button>
+                        ))}
+                    </div>
+                </div>
+            );
+        };
+
+        const NumerosGame = ({ onExit, addStars }) => {
+            const [cantidad, setCantidad] = useState(0);
+            const [opciones, setOpciones] = useState([]);
+            const [mensaje, setMensaje] = useState('');
+            const [animando, setAnimando] = useState(false);
+
+            const generarNivel = () => {
+                const num = Math.floor(Math.random() * 5) + 1; // 1 a 5
+                setCantidad(num);
+                let opts = new Set([num]);
+                while (opts.size < 3) opts.add(Math.floor(Math.random() * 5) + 1);
+                setOpciones(Array.from(opts).sort(() => 0.5 - Math.random()));
+                setMensaje('');
+                setAnimando(false);
+            };
+
+            useEffect(() => { generarNivel(); }, []);
+
+            const handleSelect = (num) => {
+                if (animando) return;
+                if (num === cantidad) {
+                    setMensaje('¡SÚPER! +1 🌟');
+                    addStars(1);
+                    setAnimando(true);
+                    setTimeout(generarNivel, 1500);
+                } else {
+                    setMensaje('Mmm... cuenta otra vez');
+                    setAnimando(true);
+                    setTimeout(() => { setMensaje(''); setAnimando(false); }, 1000);
+                }
+            };
+
+            return (
+                <div className="h-screen lg:h-[calc(100vh-4rem)] bg-emerald-400 p-6 w-full lg:max-w-5xl mx-auto relative flex flex-col items-center justify-center lg:rounded-[3rem] lg:my-8 shadow-2xl">
+                    <button onClick={onExit} className="absolute top-8 left-6 p-3 bg-white/20 hover:bg-white/40 transition rounded-full text-white font-bold backdrop-blur-sm z-10"><X className="w-8 h-8"/></button>
+                    <h2 className="text-white text-3xl font-black text-center mb-8 drop-shadow-md">¿Cuántas manzanas hay?</h2>
+                    <div className="flex flex-wrap justify-center gap-4 mb-12 h-32">
+                        {Array.from({ length: cantidad }).map((_, i) => (
+                            <span key={i} className="text-6xl animate-bounce" style={{animationDelay: `${i*0.1}s`}}>🍎</span>
+                        ))}
+                    </div>
+                    <div className="h-12 mb-4 text-2xl font-black text-white">{mensaje}</div>
+                    <div className="flex gap-4">
+                        {opciones.map((n, i) => (
+                            <button key={i} onClick={() => handleSelect(n)} className="w-24 h-24 bg-white rounded-[2rem] text-5xl font-black text-emerald-600 shadow-[0_6px_0_0_rgba(0,0,0,0.2)] active:translate-y-2 active:shadow-none transition transform hover:scale-105">
+                                {n}
+                            </button>
+                        ))}
+                    </div>
+                </div>
+            );
+        };
+
+        const ParentGate = ({ onVerify, onCancel }) => {
+            const [error, setError] = useState(false);
+
+            const handleAnswer = (ans) => {
+                if (ans === 32) {
+                    onVerify();
+                } else {
+                    setError(true);
+                    setTimeout(() => setError(false), 800); 
+                }
+            };
+
+            return (
+                <div className="flex flex-col items-center justify-center min-h-screen bg-slate-900 p-6 text-white relative">
+                    <button onClick={onCancel} className="absolute top-8 left-6 p-3 bg-slate-800 rounded-full text-slate-400 hover:text-white transition">
+                        <X className="w-8 h-8"/>
+                    </button>
+                    <Shield className="w-20 h-20 mb-6 text-emerald-400" />
+                    <h2 className="text-3xl font-black mb-2 text-center">Acceso para Adultos</h2>
+                    <p className="mb-8 text-center text-slate-400 max-w-xs">Resuelve la operación para verificar que eres un adulto.</p>
+                    <div className={`text-6xl font-black mb-4 text-emerald-300 ${error ? 'text-red-400 shake-animation' : ''}`}>
+                        8 x 4 = ?
+                    </div>
+                    <div className="h-8 mb-6 flex items-center justify-center">
+                        {error && <span className="bg-red-500/20 text-red-400 px-4 py-2 rounded-lg font-bold">Respuesta incorrecta.</span>}
+                    </div>
+                    <div className="grid grid-cols-3 gap-4 md:gap-6 w-full max-w-xs md:max-w-md">
+                        {[24, 32, 42].map(ans => (
+                            <button key={ans} onClick={() => handleAnswer(ans)} className="bg-slate-800 p-6 rounded-[2rem] text-3xl font-black hover:bg-slate-700 hover:scale-105 active:scale-95 transition border-4 border-slate-700 hover:border-emerald-500">
+                                {ans}
+                            </button>
+                        ))}
+                    </div>
+                </div>
+            );
+        };
+
+        const ParentDashboard = ({ profiles, setProfiles, videos, setVideos, onExit, showToast }) => {
+            const [selectedKid, setSelectedKid] = useState(profiles[0]);
+            const [newVideoUrl, setNewVideoUrl] = useState('');
+
+            useEffect(() => {
+                setSelectedKid(prev => profiles.find(p => p.id === prev.id) || profiles[0]);
+            }, [profiles]);
+
+            const toggleVideoApproval = (videoId) => {
+                const updatedKids = profiles.map(p => {
+                    if (p.id === selectedKid.id) {
+                        const isApproved = p.approvedVideos.includes(videoId);
+                        const newApprovals = isApproved ? p.approvedVideos.filter(id => id !== videoId) : [...p.approvedVideos, videoId];
+                        return { ...p, approvedVideos: newApprovals };
+                    }
+                    return p;
+                });
+                setProfiles(updatedKids);
+                showToast("Permisos actualizados ✔️");
+            };
+
+            const handleAddVideo = (e) => {
+                e.preventDefault();
+                if (!newVideoUrl) return;
+
+                // Magia UX: Extraer el ID del link de YouTube para obtener la miniatura real automáticamente
+                let extractedId = null;
+                try {
+                    if (newVideoUrl.includes('youtu.be/')) extractedId = newVideoUrl.split('youtu.be/')[1]?.split(/[?#]/)[0];
+                    else if (newVideoUrl.includes('youtube.com/watch')) extractedId = new URLSearchParams(newVideoUrl.split('?')[1]).get('v');
+                    else if (newVideoUrl.includes('youtube.com/shorts/')) extractedId = newVideoUrl.split('shorts/')[1]?.split(/[?#]/)[0];
+                } catch (err) {
+                    console.error("URL inválida");
+                }
+                
+                const dynamicThumbnail = extractedId 
+                    ? `https://i.ytimg.com/vi/${extractedId}/hqdefault.jpg` 
+                    : 'https://placehold.co/400x300/4f46e5/ffffff?text=Nuevo+Video';
+
+                const newVideo = {
+                    id: Date.now(),
+                    title: 'Nuevo Video Agregado',
+                    category: 'Educativo',
+                    isNew: true, // Esto lo hará aparecer en el bloque de Novedades
+                    thumbnail: dynamicThumbnail,
+                    url: newVideoUrl,
+                    certifiedPediatric: false, 
+                    certifiedParenting: false
+                };
+                
+                setVideos([newVideo, ...videos]); // Lo agrega al principio de la lista general
+                
+                // Aprobarlo automáticamente para el perfil actual (Padres no tendrán que buscarlo para encenderlo)
+                setProfiles(profiles.map(p => {
+                    if (p.id === selectedKid.id) {
+                        return { ...p, approvedVideos: [...p.approvedVideos, newVideo.id] };
+                    }
+                    return p;
+                }));
+
+                setNewVideoUrl('');
+                showToast("¡Video agregado exitosamente! 🎬");
+            };
+
+            return (
+                <div className="h-screen lg:h-[calc(100vh-4rem)] bg-slate-50 p-4 sm:p-8 md:p-12 w-full lg:max-w-5xl mx-auto shadow-2xl relative lg:rounded-[3rem] lg:my-8 overflow-y-auto hide-scrollbar">
+                    <div className="flex justify-between items-center mb-8 border-b-2 border-slate-200 pb-6 pt-4">
+                        <div>
+                            <h2 className="text-3xl font-black text-slate-800">Centro de Padres</h2>
+                            <p className="text-slate-500 font-bold mt-1">Gestión de contenido seguro</p>
+                        </div>
+                        <button onClick={onExit} className="flex items-center gap-2 bg-slate-200 text-slate-700 px-5 py-3 rounded-2xl font-black hover:bg-slate-300 transition active:scale-95">
+                            <Home className="w-6 h-6"/> Salir
+                        </button>
+                    </div>
+                    
+                    <div className="mb-3">
+                        <h3 className="text-lg font-black text-slate-700 flex items-center gap-2">
+                            <span className="bg-indigo-100 text-indigo-600 w-6 h-6 rounded-full flex items-center justify-center text-sm">1</span> 
+                            Selecciona el perfil a gestionar:
+                        </h3>
+                    </div>
+                    <div className="flex gap-4 mb-8 overflow-x-auto hide-scrollbar pb-2">
+                        {profiles.map(kid => (
+                            <button key={kid.id} onClick={() => setSelectedKid(kid)} className={`flex items-center gap-3 px-6 py-4 rounded-[2rem] font-black transition ${selectedKid.id === kid.id ? 'bg-indigo-600 text-white shadow-lg scale-105' : 'bg-white text-slate-600 border-2 border-slate-200'}`}>
+                                <span className="text-2xl">{kid.avatar}</span> {kid.name}
+                            </button>
+                        ))}
+                    </div>
+
+                    <div className="bg-white p-6 rounded-[2rem] shadow-sm border border-slate-100 mb-8">
+                        <h3 className="text-xl font-black text-slate-800 mb-4 flex items-center gap-2">
+                            <Shield className="w-6 h-6 text-emerald-500"/>
+                            Videos permitidos para {selectedKid.name}
+                        </h3>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-h-[60vh] overflow-y-auto pr-2 hide-scrollbar">
+                            {videos.map(video => {
+                                const isApproved = selectedKid.approvedVideos.includes(video.id);
+                                return (
+                                    <div key={video.id} className={`flex items-center justify-between p-4 rounded-2xl border-2 transition ${isApproved ? 'border-emerald-200 bg-emerald-50' : 'border-slate-100 bg-slate-50'}`}>
+                                        <div className="flex items-center gap-4">
+                                            <img 
+                                                src={video.thumbnail} 
+                                                className="w-16 h-16 rounded-xl object-cover" 
+                                                alt="thumb"
+                                                onError={(e) => { e.target.onerror = null; e.target.src = 'https://placehold.co/100x100/e2e8f0/475569?text=Vid'; }}
+                                            />
+                                            <div>
+                                                <h4 className="font-bold text-slate-800 leading-tight">{video.title}</h4>
+                                                <div className="flex gap-2 mt-1">
+                                                    {video.certifiedPediatric && <span className="text-[10px] bg-blue-100 text-blue-700 px-2 py-1 rounded-md font-bold">🩺 Pediatría</span>}
+                                                    {video.certifiedParenting && <span className="text-[10px] bg-purple-100 text-purple-700 px-2 py-1 rounded-md font-bold">👨‍👩‍👦 Parenting</span>}
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button onClick={() => toggleVideoApproval(video.id)} className={`w-14 h-8 rounded-full relative transition-colors ${isApproved ? 'bg-emerald-500' : 'bg-slate-300'}`}>
+                                            <div className={`absolute top-1 w-6 h-6 rounded-full bg-white transition-transform ${isApproved ? 'left-7' : 'left-1'}`}></div>
+                                        </button>
+                                    </div>
+                                );
+                            })}
+                        </div>
+                    </div>
+
+                    <div className="bg-indigo-50 p-6 rounded-[2rem] border border-indigo-100">
+                        <h3 className="text-xl font-black text-indigo-900 mb-2">Añadir Video Externo</h3>
+                        <p className="text-indigo-600/80 text-sm mb-4">Pega un link de YouTube Kids o Vimeo para agregarlo al catálogo general.</p>
+                        <form onSubmit={handleAddVideo} className="flex gap-2">
+                            <input type="url" value={newVideoUrl} onChange={e => setNewVideoUrl(e.target.value)} placeholder="https://youtube.com/..." required className="flex-1 px-4 py-3 rounded-2xl border-2 border-indigo-200 focus:border-indigo-500 outline-none font-bold text-slate-700" />
+                            <button type="submit" className="bg-indigo-600 text-white px-6 py-3 rounded-2xl font-black hover:bg-indigo-700 active:scale-95 transition">
+                                <Plus className="w-6 h-6" />
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            );
+        };
+
         function App() {
             // Estado Global
             const [profiles, setProfiles] = useState(INITIAL_PROFILES);
             const [videos, setVideos] = useState(INITIAL_VIDEOS);
             const [activeProfileId, setActiveProfileId] = useState(null);
-            
-            // Navegación (inicia en splash screen)
             const [currentView, setCurrentView] = useState('splash');
             const [activeCategory, setActiveCategory] = useState('Todos');
             const [playingVideo, setPlayingVideo] = useState(null);
-
-            // UX: Estado para notificaciones (Visibilidad del estado del sistema)
             const [toastMessage, setToastMessage] = useState('');
 
             const activeProfile = profiles.find(p => p.id === activeProfileId);
@@ -155,571 +536,178 @@
                 setPlayingVideo(video);
             };
 
-            // ==========================================
-            // COMPONENTE TOAST (Feedback UX)
-            // ==========================================
-            const Toast = () => {
-                if (!toastMessage) return null;
-                return (
-                    <div className="fixed top-6 left-1/2 transform -translate-x-1/2 bg-indigo-600 text-white px-8 py-4 rounded-[2rem] shadow-2xl z-[100] font-black text-lg animate-bounce transition-all border-4 border-white text-center w-max max-w-[90vw]">
-                        {toastMessage}
-                    </div>
-                );
-            };
-
-            // ==========================================
-            // VISTA 0: SPLASH SCREEN CON LOGO
-            // ==========================================
-            if (currentView === 'splash') {
-                return (
-                    <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-sky-100 to-indigo-100 p-6 relative overflow-hidden">
-                        {/* Decoración de fondo */}
-                        <div className="absolute top-10 left-10 w-24 h-24 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-60 animate-pulse"></div>
-                        <div className="absolute bottom-20 right-10 w-32 h-32 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-60 animate-pulse" style={{animationDelay: '1s'}}></div>
-                        
-                        {/* Logo solicitado por el usuario */}
-                        <img src="logo.png" alt="WowosPlay Logo" className="w-80 md:w-96 mb-16 drop-shadow-2xl z-10 floating" 
-                             onError={(e) => {
-                                 // Eliminado el cuadro amarillo. Simplemente ocultamos la imagen si no carga.
-                                 e.target.style.display = 'none';
-                             }} 
-                        />
-                        
-                        <button 
-                            onClick={() => setCurrentView('selector')} 
-                            className="z-10 bg-gradient-to-r from-emerald-400 to-emerald-500 text-white text-3xl font-black py-5 px-16 rounded-[3rem] shadow-[0_8px_0_0_rgba(16,185,129,1)] hover:translate-y-1 hover:shadow-[0_4px_0_0_rgba(16,185,129,1)] active:translate-y-3 active:shadow-none transition-all border-4 border-white"
-                        >
-                            ¿Listo? ¡Vamos!
-                        </button>
-                    </div>
-                );
-            }
-
-            // ==========================================
-            // VISTA 1: SELECTOR DE PERFILES
-            // ==========================================
-            if (currentView === 'selector') {
-                return (
-                    <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-indigo-50 to-blue-100 p-6 font-sans">
-                        <h1 className="text-4xl md:text-5xl font-black text-indigo-800 mb-12 text-center drop-shadow-sm">
-                            ¿Quién va a jugar?
-                        </h1>
-                        <div className="grid grid-cols-2 md:gap-12 gap-8 w-full max-w-lg md:max-w-2xl">
-                            {profiles.map(profile => (
-                                <button key={profile.id} onClick={() => login(profile.id)} 
-                                    className={`${profile.color} rounded-[3rem] p-8 flex flex-col items-center justify-center shadow-[0_8px_0_0_rgba(0,0,0,0.15)] transform transition hover:-translate-y-2 active:translate-y-2 active:shadow-none border-4 border-white group`}>
-                                    <div className="bg-white/30 rounded-full w-24 h-24 mb-4 flex items-center justify-center group-hover:scale-110 transition-transform">
-                                        <span className="text-6xl">{profile.avatar}</span>
-                                    </div>
-                                    <span className="text-3xl font-black text-white drop-shadow-md">{profile.name}</span>
-                                </button>
-                            ))}
-                        </div>
-                    </div>
-                );
-            }
-
-            // ==========================================
-            // VISTA 2: PUERTA PARENTAL (Seguridad UX)
-            // ==========================================
-            if (currentView === 'parent_gate') {
-                const [error, setError] = useState(false);
-
-                const handleAnswer = (ans) => {
-                    if (ans === 32) {
-                        setCurrentView('parent_dashboard');
-                    } else {
-                        // UX: Prevención y manejo de error con retroalimentación visual
-                        setError(true);
-                        setTimeout(() => setError(false), 800); 
-                    }
-                };
-
-                return (
-                    <div className="flex flex-col items-center justify-center min-h-screen bg-slate-900 p-6 text-white relative">
-                        {/* UX: Control de usuario - Botón claro de salida */}
-                        <button onClick={() => setCurrentView(activeProfileId ? 'kids_home' : 'selector')} 
-                            className="absolute top-8 left-6 p-3 bg-slate-800 rounded-full text-slate-400 hover:text-white transition">
-                            <X className="w-8 h-8"/>
-                        </button>
-
-                        <Shield className="w-20 h-20 mb-6 text-emerald-400" />
-                        <h2 className="text-3xl font-black mb-2 text-center">Acceso para Adultos</h2>
-                        <p className="mb-8 text-center text-slate-400 max-w-xs">Resuelve la operación para verificar que eres un adulto.</p>
-                        
-                        <div className={`text-6xl font-black mb-4 text-emerald-300 ${error ? 'text-red-400 shake-animation' : ''}`}>
-                            8 x 4 = ?
-                        </div>
-                        
-                        <div className="h-8 mb-6 flex items-center justify-center">
-                            {error && <span className="bg-red-500/20 text-red-400 px-4 py-2 rounded-lg font-bold">Respuesta incorrecta.</span>}
-                        </div>
-
-                        <div className="grid grid-cols-3 gap-4 md:gap-6 w-full max-w-xs md:max-w-md">
-                            {[24, 32, 42].map(ans => (
-                                <button key={ans} onClick={() => handleAnswer(ans)} 
-                                    className="bg-slate-800 p-6 rounded-[2rem] text-3xl font-black hover:bg-slate-700 hover:scale-105 active:scale-95 transition border-4 border-slate-700 hover:border-emerald-500">
-                                    {ans}
-                                </button>
-                            ))}
-                        </div>
-                    </div>
-                );
-            }
-
-            // ==========================================
-            // VISTA 3: DASHBOARD DE PADRES
-            // ==========================================
-            if (currentView === 'parent_dashboard') {
-                const ParentDashboard = () => {
-                    const [selectedKid, setSelectedKid] = useState(profiles[0]);
-                    const [newVideoUrl, setNewVideoUrl] = useState('');
-
-                    const toggleVideoApproval = (videoId) => {
-                        const updatedKids = profiles.map(p => {
-                            if (p.id === selectedKid.id) {
-                                const isApproved = p.approvedVideos.includes(videoId);
-                                const newApprovals = isApproved ? p.approvedVideos.filter(id => id !== videoId) : [...p.approvedVideos, videoId];
-                                return { ...p, approvedVideos: newApprovals };
-                            }
-                            return p;
-                        });
-                        setProfiles(updatedKids);
-                        setSelectedKid(updatedKids.find(k => k.id === selectedKid.id));
-                        showToast("Permisos actualizados ✔️");
-                    };
-
-                    const handleAddVideo = (e) => {
-                        e.preventDefault();
-                        if (!newVideoUrl) return;
-                        const newVideo = {
-                            id: Date.now(),
-                            title: 'Video Manual (' + newVideoUrl.substring(0, 15) + '...)',
-                            category: 'Educativo',
-                            thumbnail: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=400&q=80',
-                            certifiedPediatric: false, 
-                            certifiedParenting: false
-                        };
-                        setVideos([...videos, newVideo]);
-                        setNewVideoUrl('');
-                        showToast("¡Video agregado exitosamente! 🎬");
-                    };
-
-                    return (
-                        <div className="h-screen lg:h-[calc(100vh-4rem)] bg-slate-50 p-4 sm:p-8 md:p-12 w-full lg:max-w-5xl mx-auto shadow-2xl relative lg:rounded-[3rem] lg:my-8 overflow-y-auto hide-scrollbar">
-                            <Toast />
-                            
-                            {/* Cabecera del Dashboard */}
-                            <div className="flex justify-between items-center mb-8 border-b-2 border-slate-200 pb-6 pt-4">
-                                <div>
-                                    <h2 className="text-3xl font-black text-slate-800">Centro de Padres</h2>
-                                    <p className="text-slate-500 font-bold mt-1">Gestión de contenido seguro</p>
-                                </div>
-                                <button onClick={() => setCurrentView(activeProfileId ? 'kids_home' : 'selector')} 
-                                    className="flex items-center gap-2 bg-slate-200 text-slate-700 px-5 py-3 rounded-2xl font-black hover:bg-slate-300 transition active:scale-95">
-                                    <Home className="w-6 h-6"/> Salir
-                                </button>
-                            </div>
-                            
-                            {/* Selector de Hijo */}
-                            <div className="mb-3">
-                                <h3 className="text-lg font-black text-slate-700 flex items-center gap-2">
-                                    <span className="bg-indigo-100 text-indigo-600 w-6 h-6 rounded-full flex items-center justify-center text-sm">1</span> 
-                                    Selecciona el perfil a gestionar:
-                                </h3>
-                            </div>
-                            <div className="flex gap-4 mb-8 overflow-x-auto hide-scrollbar pb-2">
-                                {profiles.map(kid => (
-                                    <button key={kid.id} onClick={() => setSelectedKid(kid)} 
-                                        className={`flex items-center gap-3 px-6 py-4 rounded-[2rem] font-black transition ${selectedKid.id === kid.id ? 'bg-indigo-600 text-white shadow-lg scale-105' : 'bg-white text-slate-600 border-2 border-slate-200'}`}>
-                                        <span className="text-2xl">{kid.avatar}</span> {kid.name}
-                                    </button>
-                                ))}
-                            </div>
-
-                            {/* Control de Videos para el hijo seleccionado */}
-                            <div className="bg-white p-6 rounded-[2rem] shadow-sm border border-slate-100 mb-8">
-                                <h3 className="text-xl font-black text-slate-800 mb-4 flex items-center gap-2">
-                                    <Shield className="w-6 h-6 text-emerald-500"/>
-                                    Videos permitidos para {selectedKid.name}
-                                </h3>
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-h-[60vh] overflow-y-auto pr-2 hide-scrollbar">
-                                    {videos.map(video => {
-                                        const isApproved = selectedKid.approvedVideos.includes(video.id);
-                                        return (
-                                            <div key={video.id} className={`flex items-center justify-between p-4 rounded-2xl border-2 transition ${isApproved ? 'border-emerald-200 bg-emerald-50' : 'border-slate-100 bg-slate-50'}`}>
-                                                <div className="flex items-center gap-4">
-                                                    <img src={video.thumbnail} className="w-16 h-16 rounded-xl object-cover" alt="thumb"/>
-                                                    <div>
-                                                        <h4 className="font-bold text-slate-800 leading-tight">{video.title}</h4>
-                                                        <div className="flex gap-2 mt-1">
-                                                            {video.certifiedPediatric && <span className="text-[10px] bg-blue-100 text-blue-700 px-2 py-1 rounded-md font-bold">🩺 Pediatría</span>}
-                                                            {video.certifiedParenting && <span className="text-[10px] bg-purple-100 text-purple-700 px-2 py-1 rounded-md font-bold">👨‍👩‍👦 Parenting</span>}
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <button onClick={() => toggleVideoApproval(video.id)} 
-                                                    className={`w-14 h-8 rounded-full relative transition-colors ${isApproved ? 'bg-emerald-500' : 'bg-slate-300'}`}>
-                                                    <div className={`absolute top-1 w-6 h-6 rounded-full bg-white transition-transform ${isApproved ? 'left-7' : 'left-1'}`}></div>
-                                                </button>
-                                            </div>
-                                        );
-                                    })}
-                                </div>
-                            </div>
-
-                            {/* Carga Manual (Simulada) */}
-                            <div className="bg-indigo-50 p-6 rounded-[2rem] border border-indigo-100">
-                                <h3 className="text-xl font-black text-indigo-900 mb-2">Añadir Video Externo</h3>
-                                <p className="text-indigo-600/80 text-sm mb-4">Pega un link de YouTube Kids o Vimeo para agregarlo al catálogo general.</p>
-                                <form onSubmit={handleAddVideo} className="flex gap-2">
-                                    <input type="url" value={newVideoUrl} onChange={e => setNewVideoUrl(e.target.value)} placeholder="https://youtube.com/..." required
-                                        className="flex-1 px-4 py-3 rounded-2xl border-2 border-indigo-200 focus:border-indigo-500 outline-none font-bold text-slate-700" />
-                                    <button type="submit" className="bg-indigo-600 text-white px-6 py-3 rounded-2xl font-black hover:bg-indigo-700 active:scale-95 transition">
-                                        <Plus className="w-6 h-6" />
-                                    </button>
-                                </form>
-                            </div>
-                        </div>
-                    );
-                };
-                return <ParentDashboard />;
-            }
-
-            // ==========================================
-            // JUEGOS EDUCATIVOS
-            // ==========================================
-            if (currentView === 'game_letters') {
-                const LetrasGame = () => {
-                    const letras = ['A', 'E', 'I', 'O', 'U'];
-                    const [target, setTarget] = useState('');
-                    const [opciones, setOpciones] = useState([]);
-                    const [mensaje, setMensaje] = useState('');
-                    const [animando, setAnimando] = useState(false);
-
-                    const generarNivel = () => {
-                        const seleccionada = letras[Math.floor(Math.random() * letras.length)];
-                        setTarget(seleccionada);
-                        let mezclar = [...letras].sort(() => 0.5 - Math.random()).slice(0, 3);
-                        if (!mezclar.includes(seleccionada)) mezclar[0] = seleccionada;
-                        setOpciones(mezclar.sort(() => 0.5 - Math.random()));
-                        setMensaje('');
-                        setAnimando(false);
-                    };
-
-                    useEffect(() => { generarNivel(); }, []);
-
-                    const handleSelect = (letra) => {
-                        if (animando) return;
-                        if (letra === target) {
-                            setMensaje('¡CORRECTO! +1 🌟');
-                            addStars(1);
-                            setAnimando(true);
-                            setTimeout(generarNivel, 1500);
-                        } else {
-                            setMensaje('¡Intenta de nuevo!');
-                            setAnimando(true);
-                            setTimeout(() => { setMensaje(''); setAnimando(false); }, 1000);
-                        }
-                    };
-
-                    return (
-                        <div className="h-screen lg:h-[calc(100vh-4rem)] bg-blue-500 p-6 w-full lg:max-w-5xl mx-auto relative flex flex-col items-center justify-center lg:rounded-[3rem] lg:my-8 shadow-2xl">
-                            <Toast />
-                            {/* Control UX: Salida fácil */}
-                            <button onClick={() => setCurrentView('kids_games')} className="absolute top-8 left-6 p-3 bg-white/20 hover:bg-white/40 transition rounded-full text-white font-bold backdrop-blur-sm z-10"><X className="w-8 h-8"/></button>
-                            
-                            <h2 className="text-white text-3xl font-black text-center mb-8 drop-shadow-md">Encuentra la vocal:</h2>
-                            <div className="text-[8rem] font-black text-yellow-300 drop-shadow-xl mb-12 animate-bounce bg-white/20 w-48 h-48 rounded-full flex items-center justify-center">
-                                {target}
-                            </div>
-
-                            <div className="h-12 mb-4 text-2xl font-black text-white">{mensaje}</div>
-
-                            <div className="flex gap-4">
-                                {opciones.map((l, i) => (
-                                    <button key={i} onClick={() => handleSelect(l)} className="w-24 h-24 bg-white rounded-[2rem] text-5xl font-black text-blue-600 shadow-[0_6px_0_0_rgba(0,0,0,0.2)] active:translate-y-2 active:shadow-none transition transform hover:scale-105">
-                                        {l}
-                                    </button>
-                                ))}
-                            </div>
-                        </div>
-                    );
-                }
-                return <LetrasGame />;
-            }
-
-            if (currentView === 'game_numbers') {
-                const NumerosGame = () => {
-                    const [cantidad, setCantidad] = useState(0);
-                    const [opciones, setOpciones] = useState([]);
-                    const [mensaje, setMensaje] = useState('');
-                    const [animando, setAnimando] = useState(false);
-
-                    const generarNivel = () => {
-                        const num = Math.floor(Math.random() * 5) + 1; // 1 a 5
-                        setCantidad(num);
-                        let opts = new Set([num]);
-                        while (opts.size < 3) opts.add(Math.floor(Math.random() * 5) + 1);
-                        setOpciones(Array.from(opts).sort(() => 0.5 - Math.random()));
-                        setMensaje('');
-                        setAnimando(false);
-                    };
-
-                    useEffect(() => { generarNivel(); }, []);
-
-                    const handleSelect = (num) => {
-                        if (animando) return;
-                        if (num === cantidad) {
-                            setMensaje('¡SÚPER! +1 🌟');
-                            addStars(1);
-                            setAnimando(true);
-                            setTimeout(generarNivel, 1500);
-                        } else {
-                            setMensaje('Mmm... cuenta otra vez');
-                            setAnimando(true);
-                            setTimeout(() => { setMensaje(''); setAnimando(false); }, 1000);
-                        }
-                    };
-
-                    return (
-                        <div className="h-screen lg:h-[calc(100vh-4rem)] bg-emerald-400 p-6 w-full lg:max-w-5xl mx-auto relative flex flex-col items-center justify-center lg:rounded-[3rem] lg:my-8 shadow-2xl">
-                            <Toast />
-                            {/* Control UX: Salida fácil */}
-                            <button onClick={() => setCurrentView('kids_games')} className="absolute top-8 left-6 p-3 bg-white/20 hover:bg-white/40 transition rounded-full text-white font-bold backdrop-blur-sm z-10"><X className="w-8 h-8"/></button>
-                            
-                            <h2 className="text-white text-3xl font-black text-center mb-8 drop-shadow-md">¿Cuántas manzanas hay?</h2>
-                            
-                            <div className="flex flex-wrap justify-center gap-4 mb-12 h-32">
-                                {Array.from({ length: cantidad }).map((_, i) => (
-                                    <span key={i} className="text-6xl animate-bounce" style={{animationDelay: `${i*0.1}s`}}>🍎</span>
-                                ))}
-                            </div>
-
-                            <div className="h-12 mb-4 text-2xl font-black text-white">{mensaje}</div>
-
-                            <div className="flex gap-4">
-                                {opciones.map((n, i) => (
-                                    <button key={i} onClick={() => handleSelect(n)} className="w-24 h-24 bg-white rounded-[2rem] text-5xl font-black text-emerald-600 shadow-[0_6px_0_0_rgba(0,0,0,0.2)] active:translate-y-2 active:shadow-none transition transform hover:scale-105">
-                                        {n}
-                                    </button>
-                                ))}
-                            </div>
-                        </div>
-                    );
-                }
-                return <NumerosGame />;
-            }
-
-            // ==========================================
-            // COMPONENTES COMPARTIDOS DE NIÑOS
-            // ==========================================
-            const VideoPlayerModal = () => {
-                if (!playingVideo) return null;
-                
-                // UX: Convertir los links de YouTube a formato de inserción segura (Embed)
-                const getEmbedUrl = (url) => {
-                    if (!url) return null;
-                    if (url.includes('youtube.com/watch?v=')) {
-                        return url.replace('watch?v=', 'embed/');
-                    }
-                    if (url.includes('@SuperSimpleEspanol')) {
-                        // Fallback a un video de Super Simple Español para simular el canal dentro del reproductor
-                        return 'https://www.youtube.com/embed/qA-OQ-VwG-o'; 
-                    }
-                    return null;
-                };
-
-                const embedUrl = getEmbedUrl(playingVideo.url);
-
-                return (
-                    <div className="fixed inset-0 bg-slate-900 z-[100] flex flex-col">
-                        <div className="flex justify-between items-center p-4 bg-slate-800 text-white shadow-md z-10">
-                            <h3 className="font-bold truncate text-xl">{playingVideo.title}</h3>
-                            <button onClick={() => setPlayingVideo(null)} className="p-3 bg-slate-700 hover:bg-red-500 rounded-full transition active:scale-95">
-                                <X className="w-6 h-6" />
-                            </button>
-                        </div>
-                        <div className="flex-1 bg-black relative flex items-center justify-center p-0 md:p-6">
-                            {embedUrl ? (
-                                <iframe 
-                                    className="w-full h-full max-w-5xl max-h-[80vh] md:rounded-2xl shadow-2xl bg-slate-900"
-                                    src={`${embedUrl}?autoplay=1`}
-                                    title={playingVideo.title}
-                                    frameBorder="0" 
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                                    allowFullScreen>
-                                </iframe>
-                            ) : (
-                                <>
-                                    <img src={playingVideo.thumbnail} alt={playingVideo.title} className="w-full h-full object-cover opacity-30 blur-sm absolute inset-0" />
-                                    <div className="relative z-10 flex flex-col items-center">
-                                        <Play className="w-24 h-24 text-white opacity-90 mb-4 animate-pulse drop-shadow-[0_0_15px_rgba(255,255,255,0.5)]" fill="currentColor" />
-                                        <p className="text-white text-2xl font-black text-center px-4">Reproduciendo...<br/><span className="text-sm font-normal opacity-70">(Simulación sin URL)</span></p>
-                                    </div>
-                                </>
-                            )}
-                        </div>
-                    </div>
-                );
-            };
-
-            const NavButton = ({ icon: IconComponent, label, isActive, onClick }) => (
-                <button onClick={onClick} className={`flex flex-col items-center justify-center w-20 transition-transform ${isActive ? '-translate-y-2' : 'opacity-70 hover:opacity-100'}`}>
-                    <div className={`p-3 rounded-[1.5rem] mb-1 transition-colors ${isActive ? 'bg-indigo-500 text-white shadow-lg' : 'text-slate-400 bg-slate-100'}`}>
-                        <IconComponent className="w-7 h-7" fill={isActive ? "currentColor" : "none"} />
-                    </div>
-                    <span className={`text-[11px] font-black uppercase ${isActive ? 'text-indigo-600' : 'text-slate-400'}`}>{label}</span>
-                </button>
-            );
-
-            // ==========================================
-            // RENDER PRINCIPAL (NIÑOS)
-            // ==========================================
-            let displayVideos = [];
-            // Filtrar videos según permisos del niño y pestaña actual
-            const kidApprovedVideos = videos.filter(v => activeProfile.approvedVideos.includes(v.id));
-
-            if (currentView === 'kids_history') displayVideos = activeProfile.history.map(id => kidApprovedVideos.find(v => v.id === id)).filter(Boolean);
-            else if (currentView === 'kids_favorites') displayVideos = activeProfile.favorites.map(id => kidApprovedVideos.find(v => v.id === id)).filter(Boolean);
-            else displayVideos = activeCategory === 'Todos' ? kidApprovedVideos : kidApprovedVideos.filter(v => v.category === activeCategory);
-
-            const newReleases = kidApprovedVideos.filter(v => v.isNew);
-
             return (
-                <div className="flex flex-col h-screen lg:h-[calc(100vh-4rem)] bg-indigo-50 font-sans w-full lg:max-w-5xl mx-auto relative shadow-2xl overflow-hidden lg:rounded-[3rem] lg:my-8">
-                    <Toast />
+                <>
+                    {/* Componente Global de Notificaciones */}
+                    <Toast message={toastMessage} />
                     
-                    {/* Encabezado Infantil */}
-                    <div className="bg-white px-6 md:px-12 pt-8 lg:pt-6 pb-6 rounded-b-[2.5rem] shadow-sm flex justify-between items-center z-20 flex-shrink-0">
-                        <div className="flex items-center gap-4 cursor-pointer hover:opacity-80 transition" onClick={logout}>
-                            <div className={`${activeProfile.color} w-16 h-16 rounded-[1.5rem] flex items-center justify-center text-3xl shadow-inner border-4 border-white transform rotate-3`}>
-                                {activeProfile.avatar}
-                            </div>
-                            <div>
-                                <p className="text-sm text-slate-400 font-black uppercase tracking-wider">¡HOLA!</p>
-                                <h1 className="text-2xl font-black text-slate-800 leading-none">{activeProfile.name}</h1>
-                            </div>
-                        </div>
-                        <div className="flex flex-col items-end gap-2">
-                            <button onClick={() => setCurrentView('parent_gate')} className="p-3 bg-slate-100 rounded-full text-slate-400 hover:bg-slate-200 active:scale-95 transition">
-                                <Lock className="w-6 h-6" />
+                    {currentView === 'splash' && (
+                        <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-sky-100 to-indigo-100 p-6 relative overflow-hidden">
+                            <div className="absolute top-10 left-10 w-24 h-24 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-60 animate-pulse"></div>
+                            <div className="absolute bottom-20 right-10 w-32 h-32 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-60 animate-pulse" style={{animationDelay: '1s'}}></div>
+                            <img src="logo.png" alt="WowosPlay Logo" className="w-80 md:w-96 mb-16 drop-shadow-2xl z-10 floating" onError={(e) => { e.target.style.display = 'none'; }} />
+                            <button onClick={() => setCurrentView('selector')} className="z-10 bg-gradient-to-r from-emerald-400 to-emerald-500 text-white text-3xl font-black py-5 px-16 rounded-[3rem] shadow-[0_8px_0_0_rgba(16,185,129,1)] hover:translate-y-1 hover:shadow-[0_4px_0_0_rgba(16,185,129,1)] active:translate-y-3 active:shadow-none transition-all border-4 border-white">
+                                ¿Listo? ¡Vamos!
                             </button>
-                            <div className="flex items-center gap-1 bg-yellow-100 text-yellow-600 px-3 py-1 rounded-full font-black text-sm">
-                                <Star className="w-4 h-4" fill="currentColor" /> {activeProfile.stars}
+                        </div>
+                    )}
+
+                    {currentView === 'selector' && (
+                        <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-indigo-50 to-blue-100 p-6 font-sans">
+                            <h1 className="text-4xl md:text-5xl font-black text-indigo-800 mb-12 text-center drop-shadow-sm">Elige un perfil</h1>
+                            <div className="grid grid-cols-2 md:gap-12 gap-8 w-full max-w-lg md:max-w-2xl">
+                                {profiles.map(profile => (
+                                    <button key={profile.id} onClick={() => login(profile.id)} className={`${profile.color} rounded-[3rem] p-8 flex flex-col items-center justify-center shadow-[0_8px_0_0_rgba(0,0,0,0.15)] transform transition hover:-translate-y-2 active:translate-y-2 active:shadow-none border-4 border-white group`}>
+                                        <div className="bg-white/30 rounded-full w-24 h-24 mb-4 flex items-center justify-center group-hover:scale-110 transition-transform"><span className="text-6xl">{profile.avatar}</span></div>
+                                        <span className="text-3xl font-black text-white drop-shadow-md">{profile.name}</span>
+                                    </button>
+                                ))}
                             </div>
                         </div>
-                    </div>
+                    )}
 
-                    <div className="p-6 md:p-10 lg:p-12 space-y-8 md:space-y-12 flex-1 overflow-y-auto pb-32 hide-scrollbar">
-                        {/* Menú de Juegos */}
-                        {currentView === 'kids_games' && (
-                            <section className="animate-fade-in">
-                                <h2 className="text-2xl font-black text-slate-800 mb-4 flex items-center gap-2">
-                                    <Gamepad className="text-indigo-500 w-6 h-6" /> ¡A Jugar!
-                                </h2>
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-                                    <button onClick={() => setCurrentView('game_letters')} className="bg-blue-500 text-white p-6 rounded-[2rem] flex items-center gap-6 shadow-[0_6px_0_0_rgba(37,99,235,1)] active:translate-y-2 active:shadow-none transition group">
-                                        <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center text-4xl group-hover:scale-110 transition">A</div>
-                                        <div className="text-left"><h3 className="font-black text-2xl">Letras Locas</h3><p className="font-bold opacity-80">Encuentra la vocal</p></div>
-                                    </button>
-                                    <button onClick={() => setCurrentView('game_numbers')} className="bg-emerald-500 text-white p-6 rounded-[2rem] flex items-center gap-6 shadow-[0_6px_0_0_rgba(5,150,105,1)] active:translate-y-2 active:shadow-none transition group">
-                                        <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center text-4xl group-hover:scale-110 transition">123</div>
-                                        <div className="text-left"><h3 className="font-black text-2xl">Números</h3><p className="font-bold opacity-80">Cuenta las manzanas</p></div>
-                                    </button>
-                                </div>
-                            </section>
-                        )}
+                    {currentView === 'parent_gate' && (
+                        <ParentGate onVerify={() => setCurrentView('parent_dashboard')} onCancel={() => setCurrentView(activeProfileId ? 'kids_home' : 'selector')} />
+                    )}
 
-                        {/* Videos Nuevos */}
-                        {currentView === 'kids_home' && newReleases.length > 0 && (
-                            <section>
-                                <h2 className="text-2xl font-black text-slate-800 mb-4 flex items-center gap-2">
-                                    <Sparkles className="text-yellow-500 w-6 h-6" /> ¡Nuevos!
-                                </h2>
-                                <div className="flex overflow-x-auto gap-4 md:gap-6 pb-4 snap-x hide-scrollbar">
-                                    {newReleases.map(video => (
-                                        <div key={video.id} onClick={() => playVideo(video)} className="snap-center shrink-0 w-64 relative rounded-[2rem] overflow-hidden shadow-lg cursor-pointer transform transition hover:scale-105 active:scale-95">
-                                            <div className="absolute top-3 left-3 bg-red-500 text-white text-xs font-black px-4 py-2 rounded-full z-10 animate-bounce shadow-md">NUEVO</div>
-                                            <img src={video.thumbnail} alt={video.title} className="w-full h-40 object-cover" />
-                                            <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent"></div>
-                                            <div className="absolute inset-0 flex items-center justify-center">
-                                                <div className="bg-white/30 p-4 rounded-full backdrop-blur-sm"><Play className="w-8 h-8 text-white" fill="currentColor" /></div>
-                                            </div>
-                                            <div className="absolute bottom-0 left-0 right-0 p-5">
-                                                <h3 className="text-white font-black text-lg leading-tight truncate">{video.title}</h3>
-                                            </div>
-                                        </div>
-                                    ))}
-                                </div>
-                            </section>
-                        )}
+                    {currentView === 'parent_dashboard' && (
+                        <ParentDashboard profiles={profiles} setProfiles={setProfiles} videos={videos} setVideos={setVideos} showToast={showToast} onExit={() => setCurrentView(activeProfileId ? 'kids_home' : 'selector')} />
+                    )}
 
-                        {/* Categorías */}
-                        {currentView === 'kids_home' && (
-                            <div className="flex overflow-x-auto gap-3 pb-2 hide-scrollbar">
-                                {CATEGORIES.map(cat => {
-                                    const IconComponent = cat.icon;
-                                    const isActive = activeCategory === cat.name;
-                                    return (
-                                        <button key={cat.name} onClick={() => setActiveCategory(cat.name)} 
-                                            className={`flex items-center gap-2 px-6 py-4 rounded-[1.5rem] font-black whitespace-nowrap transition-all ${isActive ? 'bg-indigo-600 text-white shadow-md scale-105' : 'bg-white text-slate-500 border-2 border-slate-100 hover:bg-slate-50'}`}>
-                                            <IconComponent className={`w-5 h-5 ${isActive ? 'text-white' : 'text-indigo-400'}`} /> {cat.name}
-                                        </button>
-                                    );
-                                })}
-                            </div>
-                        )}
+                    {currentView === 'game_letters' && (
+                        <LetrasGame onExit={() => setCurrentView('kids_games')} addStars={addStars} />
+                    )}
 
-                        {/* Lista de Videos Principal */}
-                        {currentView !== 'kids_games' && (
-                            <section>
-                                <h2 className="text-2xl font-black text-slate-800 mb-6">
-                                    {currentView === 'kids_history' ? 'Ya lo viste' : currentView === 'kids_favorites' ? 'Tus Favoritos' : activeCategory === 'Todos' ? 'Para ti' : activeCategory}
-                                </h2>
-                                {displayVideos.length === 0 ? (
-                                    <div className="text-center py-12 bg-white/50 rounded-[2rem] border-4 border-dashed border-slate-200">
-                                        <div className="text-5xl mb-4 opacity-50">👻</div>
-                                        <p className="text-slate-400 font-black text-lg">¡Aún no hay videos aquí!</p>
+                    {currentView === 'game_numbers' && (
+                        <NumerosGame onExit={() => setCurrentView('kids_games')} addStars={addStars} />
+                    )}
+
+                    {['kids_home', 'kids_games', 'kids_history', 'kids_favorites'].includes(currentView) && activeProfile && (
+                        <div className="flex flex-col h-screen lg:h-[calc(100vh-4rem)] bg-indigo-50 font-sans w-full lg:max-w-5xl mx-auto relative shadow-2xl overflow-hidden lg:rounded-[3rem] lg:my-8">
+                            <div className="bg-white px-6 md:px-12 pt-8 lg:pt-6 pb-6 rounded-b-[2.5rem] shadow-sm flex justify-between items-center z-20 flex-shrink-0">
+                                <div className="flex items-center gap-4 cursor-pointer hover:opacity-80 transition" onClick={logout}>
+                                    <div className={`${activeProfile.color} w-16 h-16 rounded-[1.5rem] flex items-center justify-center text-3xl shadow-inner border-4 border-white transform rotate-3`}>{activeProfile.avatar}</div>
+                                    <div>
+                                        <p className="text-sm text-slate-400 font-black uppercase tracking-wider">¡HOLA!</p>
+                                        <h1 className="text-2xl font-black text-slate-800 leading-none">{activeProfile.name}</h1>
                                     </div>
-                                ) : (
-                                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 md:gap-6">
-                                        {displayVideos.map(video => {
-                                            const isFavorite = activeProfile.favorites.includes(video.id);
-                                            return (
-                                                <div key={video.id} className="bg-white rounded-[1.5rem] overflow-hidden shadow-sm border-2 border-slate-100 flex flex-col relative group">
-                                                    <button onClick={(e) => { e.stopPropagation(); toggleFavorite(video.id); }} 
-                                                        className="absolute top-2 right-2 p-2 bg-white/90 backdrop-blur-sm rounded-full z-10 shadow-sm hover:scale-110 active:scale-90 transition">
-                                                        <Heart className={`w-5 h-5 ${isFavorite ? 'text-red-500' : 'text-slate-300'}`} fill={isFavorite ? "currentColor" : "none"} />
-                                                    </button>
-                                                    <div onClick={() => playVideo(video)} className="relative cursor-pointer">
-                                                        <img src={video.thumbnail} alt={video.title} className="w-full h-32 object-cover" />
-                                                        <div className="absolute inset-0 bg-slate-900/10 group-hover:bg-slate-900/30 transition flex items-center justify-center">
-                                                            <Play className="w-12 h-12 text-white opacity-80 drop-shadow-md group-hover:scale-110 transition-transform" fill="currentColor" />
-                                                        </div>
-                                                    </div>
-                                                    <div className="p-4">
-                                                        <h3 className="font-black text-slate-800 text-sm leading-tight line-clamp-2">{video.title}</h3>
-                                                    </div>
+                                </div>
+                                <div className="flex flex-col items-end gap-2">
+                                    <button onClick={() => setCurrentView('parent_gate')} className="p-3 bg-slate-100 rounded-full text-slate-400 hover:bg-slate-200 active:scale-95 transition"><Lock className="w-6 h-6" /></button>
+                                    <div className="flex items-center gap-1 bg-yellow-100 text-yellow-600 px-3 py-1 rounded-full font-black text-sm"><Star className="w-4 h-4" fill="currentColor" /> {activeProfile.stars}</div>
+                                </div>
+                            </div>
+
+                            <div className="p-6 md:p-10 lg:p-12 space-y-8 md:space-y-12 flex-1 overflow-y-auto pb-32 hide-scrollbar">
+                                {currentView === 'kids_games' && (
+                                    <section className="animate-fade-in">
+                                        <h2 className="text-2xl font-black text-slate-800 mb-4 flex items-center gap-2"><Gamepad className="text-indigo-500 w-6 h-6" /> ¡A Jugar!</h2>
+                                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+                                            <button onClick={() => setCurrentView('game_letters')} className="bg-blue-500 text-white p-6 rounded-[2rem] flex items-center gap-6 shadow-[0_6px_0_0_rgba(37,99,235,1)] active:translate-y-2 active:shadow-none transition group">
+                                                <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center text-4xl group-hover:scale-110 transition">A</div>
+                                                <div className="text-left"><h3 className="font-black text-2xl">Letras Locas</h3><p className="font-bold opacity-80">Encuentra la vocal</p></div>
+                                            </button>
+                                            <button onClick={() => setCurrentView('game_numbers')} className="bg-emerald-500 text-white p-6 rounded-[2rem] flex items-center gap-6 shadow-[0_6px_0_0_rgba(5,150,105,1)] active:translate-y-2 active:shadow-none transition group">
+                                                <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center text-4xl group-hover:scale-110 transition">123</div>
+                                                <div className="text-left"><h3 className="font-black text-2xl">Números</h3><p className="font-bold opacity-80">Cuenta las manzanas</p></div>
+                                            </button>
+                                        </div>
+                                    </section>
+                                )}
+
+                                {currentView === 'kids_home' && videos.filter(v => activeProfile.approvedVideos.includes(v.id) && v.isNew).length > 0 && (
+                                    <section>
+                                        <h2 className="text-2xl font-black text-slate-800 mb-4 flex items-center gap-2"><Sparkles className="text-yellow-500 w-6 h-6" /> ¡Nuevos!</h2>
+                                        <div className="flex overflow-x-auto gap-4 md:gap-6 pb-4 snap-x hide-scrollbar">
+                                            {videos.filter(v => activeProfile.approvedVideos.includes(v.id) && v.isNew).map(video => (
+                                                <div key={video.id} onClick={() => playVideo(video)} className="snap-center shrink-0 w-64 relative rounded-[2rem] overflow-hidden shadow-lg cursor-pointer transform transition hover:scale-105 active:scale-95">
+                                                    <div className="absolute top-3 left-3 bg-red-500 text-white text-xs font-black px-4 py-2 rounded-full z-10 animate-bounce shadow-md">NUEVO</div>
+                                                    <img 
+                                                        src={video.thumbnail} 
+                                                        alt={video.title} 
+                                                        className="w-full h-40 object-cover" 
+                                                        onError={(e) => { e.target.onerror = null; e.target.src = 'https://placehold.co/400x250/e2e8f0/475569?text=Video'; }}
+                                                    />
+                                                    <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent"></div>
+                                                    <div className="absolute inset-0 flex items-center justify-center"><div className="bg-white/30 p-4 rounded-full backdrop-blur-sm"><Play className="w-8 h-8 text-white" fill="currentColor" /></div></div>
+                                                    <div className="absolute bottom-0 left-0 right-0 p-5"><h3 className="text-white font-black text-lg leading-tight truncate">{video.title}</h3></div>
                                                 </div>
+                                            ))}
+                                        </div>
+                                    </section>
+                                )}
+
+                                {currentView === 'kids_home' && (
+                                    <div className="flex overflow-x-auto gap-3 pb-2 hide-scrollbar">
+                                        {CATEGORIES.map(cat => {
+                                            const IconComponent = cat.icon;
+                                            const isActive = activeCategory === cat.name;
+                                            return (
+                                                <button key={cat.name} onClick={() => setActiveCategory(cat.name)} className={`flex items-center gap-2 px-6 py-4 rounded-[1.5rem] font-black whitespace-nowrap transition-all ${isActive ? 'bg-indigo-600 text-white shadow-md scale-105' : 'bg-white text-slate-500 border-2 border-slate-100 hover:bg-slate-50'}`}>
+                                                    <IconComponent className={`w-5 h-5 ${isActive ? 'text-white' : 'text-indigo-400'}`} /> {cat.name}
+                                                </button>
                                             );
                                         })}
                                     </div>
                                 )}
-                            </section>
-                        )}
-                    </div>
 
-                    {/* Navegación Inferior Infantil */}
-                    <div className="absolute bottom-0 w-full bg-white px-6 md:px-16 py-4 flex justify-between md:justify-around items-center rounded-t-[2.5rem] lg:rounded-b-[3rem] shadow-[0_-10px_40px_rgba(0,0,0,0.08)] z-20 pb-8 lg:pb-4 flex-shrink-0">
-                        <NavButton icon={Home} label="Videos" isActive={currentView === 'kids_home'} onClick={() => setCurrentView('kids_home')} />
-                        <NavButton icon={Gamepad} label="Juegos" isActive={currentView === 'kids_games'} onClick={() => setCurrentView('kids_games')} />
-                        <NavButton icon={Heart} label="Favoritos" isActive={currentView === 'kids_favorites'} onClick={() => setCurrentView('kids_favorites')} />
-                        <NavButton icon={Clock} label="Historial" isActive={currentView === 'kids_history'} onClick={() => setCurrentView('kids_history')} />
-                    </div>
+                                {currentView !== 'kids_games' && (() => {
+                                    const kidApprovedVideos = videos.filter(v => activeProfile.approvedVideos.includes(v.id));
+                                    let displayVideos = [];
+                                    if (currentView === 'kids_history') displayVideos = activeProfile.history.map(id => kidApprovedVideos.find(v => v.id === id)).filter(Boolean);
+                                    else if (currentView === 'kids_favorites') displayVideos = activeProfile.favorites.map(id => kidApprovedVideos.find(v => v.id === id)).filter(Boolean);
+                                    else displayVideos = activeCategory === 'Todos' ? kidApprovedVideos : kidApprovedVideos.filter(v => v.category === activeCategory);
 
-                    <VideoPlayerModal />
-                </div>
+                                    return (
+                                        <section>
+                                            <h2 className="text-2xl font-black text-slate-800 mb-6">
+                                                {currentView === 'kids_history' ? 'Ya lo viste' : currentView === 'kids_favorites' ? 'Tus Favoritos' : activeCategory === 'Todos' ? 'Para ti' : activeCategory}
+                                            </h2>
+                                            {displayVideos.length === 0 ? (
+                                                <div className="text-center py-12 bg-white/50 rounded-[2rem] border-4 border-dashed border-slate-200">
+                                                    <div className="text-5xl mb-4 opacity-50">👻</div>
+                                                    <p className="text-slate-400 font-black text-lg">¡Aún no hay videos aquí!</p>
+                                                </div>
+                                            ) : (
+                                                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 md:gap-6">
+                                                    {displayVideos.map(video => {
+                                                        const isFavorite = activeProfile.favorites.includes(video.id);
+                                                        return (
+                                                            <div key={video.id} className="bg-white rounded-[1.5rem] overflow-hidden shadow-sm border-2 border-slate-100 flex flex-col relative group">
+                                                                <button onClick={(e) => { e.stopPropagation(); toggleFavorite(video.id); }} className="absolute top-2 right-2 p-2 bg-white/90 backdrop-blur-sm rounded-full z-10 shadow-sm hover:scale-110 active:scale-90 transition">
+                                                                    <Heart className={`w-5 h-5 ${isFavorite ? 'text-red-500' : 'text-slate-300'}`} fill={isFavorite ? "currentColor" : "none"} />
+                                                                </button>
+                                                                <div onClick={() => playVideo(video)} className="relative cursor-pointer">
+                                                                    <img 
+                                                                        src={video.thumbnail} 
+                                                                        alt={video.title} 
+                                                                        className="w-full h-32 object-cover"
+                                                                        onError={(e) => { e.target.onerror = null; e.target.src = 'https://placehold.co/400x250/e2e8f0/475569?text=Video'; }}
+                                                                    />
+                                                                    <div className="absolute inset-0 bg-slate-900/10 group-hover:bg-slate-900/30 transition flex items-center justify-center"><Play className="w-12 h-12 text-white opacity-80 drop-shadow-md group-hover:scale-110 transition-transform" fill="currentColor" /></div>
+                                                                </div>
+                                                                <div className="p-4"><h3 className="font-black text-slate-800 text-sm leading-tight line-clamp-2">{video.title}</h3></div>
+                                                            </div>
+                                                        );
+                                                    })}
+                                                </div>
+                                            )}
+                                        </section>
+                                    );
+                                })()}
+                            </div>
+
+                            <div className="absolute bottom-0 w-full bg-white px-6 md:px-16 py-4 flex justify-between md:justify-around items-center rounded-t-[2.5rem] lg:rounded-b-[3rem] shadow-[0_-10px_40px_rgba(0,0,0,0.08)] z-20 pb-8 lg:pb-4 flex-shrink-0">
+                                <NavButton icon={Home} label="Videos" isActive={currentView === 'kids_home'} onClick={() => setCurrentView('kids_home')} />
+                                <NavButton icon={Gamepad} label="Juegos" isActive={currentView === 'kids_games'} onClick={() => setCurrentView('kids_games')} />
+                                <NavButton icon={Heart} label="Favoritos" isActive={currentView === 'kids_favorites'} onClick={() => setCurrentView('kids_favorites')} />
+                                <NavButton icon={Clock} label="Historial" isActive={currentView === 'kids_history'} onClick={() => setCurrentView('kids_history')} />
+                            </div>
+
+                            <VideoPlayerModal playingVideo={playingVideo} setPlayingVideo={setPlayingVideo} />
+                        </div>
+                    )}
+                </>
             );
         }
 
